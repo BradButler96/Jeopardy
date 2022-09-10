@@ -54,7 +54,8 @@ function handleClick(evt) {
         clue.showing = 'question';
         evt.target.classList.toggle('question');
     } else if (clue.showing == 'question') {
-        evt.target.classList.toggle('question');        evt.target.innerText = clue.answer;
+        evt.target.classList.toggle('question');        
+        evt.target.innerText = clue.answer;
         clue.showing = 'answer';
         evt.target.classList.toggle('answer');
     } else {
